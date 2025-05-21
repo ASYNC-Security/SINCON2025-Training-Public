@@ -864,3 +864,8 @@ bloodyAD --host 'dc.async.local' -u 'Austin_BROOKS' -p ':3a7b6510f7ba73bf0171dd2
 
 There is another way to compromise `svc_async-1` with these primitives, without forcibly changing their password. This is done using Active Directory Certificate Services (ADCS) via the Shadow Credentials attribute, this is an extra-mile - EM5.
 
+## Exercise 6: Domain Dominance
+
+Using `svc_async-1`, they can perform an attack that allows for the compromise of the entire domain. Enumerate it, and perform the attack to compromise the domain.
+
+**Q20**: What is the NTLM hash of the `Admin` user?
