@@ -201,6 +201,14 @@ The following should be added to your `/etc/hosts` before starting the lab to ha
 10.2.10.173  DEV.async.local
 ```
 
+To ensure that your datetime is synced with the DC properly, run the following commands:
+
+```
+sudo timedatectl set-ntp false
+sudo ntpdate dc.async.local
+```
+
+
 Any reference to `targets.txt` in this lab sheet refers to the following contents:
 
 ```
